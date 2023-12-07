@@ -1,11 +1,7 @@
 #  _Mesonauta festivus_ - mtDNA
 
-![GitHub language count](FASTA)
-![GitHub forks](https://img.shields.io/github/forks/iuricode/README-template?style=for-the-badge)
-![Bitbucket open issues](https://img.shields.io/bitbucket/issues/iuricode/README-template?style=for-the-badge)
-![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/iuricode/README-template?style=for-the-badge)
-
-<img src="mtDNA.png" alt="mtDNA">
+<img src="mitoAnnotator_output/Contig1-1.png" alt="mitoannotator - novoplasty">
+<img src="Mfestivus_ERR10789898.Mfestivus_ERR10789898.megahit.mitogenome.fa.result/circos.png" alt="mitoZ">
 
 > Projeto de montagem e análise do DNA mitocondrial do peixe _Mesonauta Festivus_.
 
@@ -17,7 +13,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Anotação
 - [x] tRNA scan
 - [x] RCSU
-- [x] Regiões secundárias D-loop
+- [] Regiões secundárias D-loop
 - [x] Árvore filogenética
 
 ## 💻 Softwares utilizados
@@ -28,6 +24,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - BLASTn
 - Mitoannotator
 - Nextflow
+- Phylotree
 
 ## 🚀 Metodologia
 
@@ -122,8 +119,7 @@ Use Quality Scores    = no
 Reduce ambigious N's  =
 Output path           =
 ```
-> Outputs:
-> <novoplastyout>
+c
 
 Mitoz
 ```
@@ -146,7 +142,8 @@ mitoz all  \
 --requiring_taxa Chordata
 ```
 > Outputs:
-> <mitoz out>
+[MitoZ ASSEMBLY](Mfestivus_ERR10789898.megahit.result)
+[MitoZ ANOTAÇÃO](Mfestivus_ERR10789898.Mfestivus_ERR10789898.megahit.mitogenome.fa.result)
 
 As mitocondrias foram alinhadas utilizando BLAST e obtiveram .....
 
@@ -154,7 +151,7 @@ As mitocondrias foram alinhadas utilizando BLAST e obtiveram .....
 
 As mitocôndrias foram anotadas no [MitoAnnotator](http://mitofish.aori.u-tokyo.ac.jp/annotation/input/)
 > Outputs:
-> <MitoAnnotator out>
+[MitoAnnotator output](mitoAnnotator_output)
 
 ### tRNAscan:
 
@@ -182,7 +179,9 @@ Os tRNAs foram obtidos pelo mitoz e plotados pelo programa [tRNAscan-SE](http://
 <img src="drwtrna124371.gif" alt="tRNA">
 <img src="drwtrna124433.gif" alt="tRNA">
 <img src="drwtrna124468.gif" alt="tRNA">
+
 ```
+
 Sequence                                		tRNA	Bounds	tRNA	Anti	Intron Bounds	Inf	      
 Name                                    	tRNA #	Begin	End	Type	Codon	Begin	End	Score	Note
 --------                                	------	-----	------	----	-----	-----	----	------	------
@@ -212,76 +211,32 @@ k141_742411_trnG_ucc__len_72__15155_15227_-	1	1 	72	Gly	TCC	0	0	104.6
 
 ### Árvore Filogenética:
 
-Os tRNAs foram obtidos pelo mitoz e plotados pelo programa [tRNAscan-SE](http://lowelab.ucsc.edu/tRNAscan-SE/)
-
-
+A árvore foi montada copm o [Phylotree]([http://lowelab.ucsc.edu/tRNAscan-SE/](https://phylo.io/))
+<img src="PhyloIO_Tree.png" alt="tree">
 
 ### RSCU:
 
 O RSCU foi calculado pelo [RSCURS](https://www.lirmm.fr/~rivals/rscu/)
+```
+CODONS	TTT	TTC	TTA	TTG	CTT	CTC	CTA	CTG	ATT	ATC	ATA	ATG	GTT	GTC	GTA	GTG	TCT	TCC	TCA	TCG	AGT	AGC	CCT	CCC	CCA	CCG	ACT	ACC	ACA	ACG	GCT	GCC	GCA	GCG	TAT	TAC	CAT	CAC	CAA	CAG	AAT	AAC	AAA	AAG	GAT	GAC	GAA	GAG	TGT	TGC	TGA	TGG	CGT	CGC	CGA	CGG	GGT	GGC	GGA	GGG	
+AMINOACIDS	F	F	L	L	L	L	L	L	I	I	M	M	V	V	V	V	S	S	S	S	S	S	P	P	P	P	T	T	T	T	A	A	A	A	Y	Y	H	H	Q	Q	N	N	K	K	D	D	E	E	C	C	W	W	R	R	R	R	G	G	G	G	
+k141_742411;ATP8;len=168;[139:307](-)	 1.000	 1.000	 0.000	 0.000	 1.200	 1.200	 3.600	 0.000	 2.000	 0.000	 0.000	 2.000	 2.000	 2.000	 0.000	 0.000	 0.000	 4.500	 0.000	 0.000	 0.000	 1.500	 2.000	 0.000	 1.600	 0.400	 0.000	 1.000	 3.000	 0.000	 0.000	 2.667	 1.333	 0.000	 0.000	 0.000	 0.000	 2.000	 2.000	 0.000	 0.000	 2.000	 2.000	 0.000	 0.000	 2.000	 2.000	 0.000	 0.000	 0.000	 2.000	 0.000	 0.000	 0.000	 0.000	 0.000	 0.000	 0.000	 0.000	 0.000	
+k141_742411;COX2;len=699;[375:1074](-)	 1.273	 0.727	 0.414	 0.414	 2.483	 1.241	 1.034	 0.414	 1.048	 0.952	 1.455	 0.545	 0.941	 1.176	 1.176	 0.706	 1.412	 1.412	 1.412	 0.353	 0.000	 1.412	 0.857	 2.571	 0.571	 0.000	 1.000	 1.667	 1.333	 0.000	 1.067	 1.333	 1.600	 0.000	 0.750	 1.250	 0.400	 1.600	 1.750	 0.250	 0.400	 1.600	 2.000	 0.000	 0.615	 1.385	 2.000	 0.000	 0.000	 2.000	 2.000	 0.000	 0.000	 1.333	 2.667	 0.000	 0.444	 0.444	 1.778	 1.333	
+k141_742411;COX1;len=1563;[1242:2805](-)	 1.238	 0.762	 0.968	 0.097	 1.645	 1.452	 1.161	 0.677	 1.143	 0.857	 1.520	 0.480	 0.900	 1.400	 1.400	 0.300	 1.500	 1.071	 2.143	 0.429	 0.214	 0.643	 0.774	 1.548	 1.548	 0.129	 1.000	 1.333	 1.556	 0.111	 0.978	 1.600	 1.333	 0.089	 0.889	 1.111	 0.421	 1.579	 1.800	 0.200	 0.800	 1.200	 2.000	 0.000	 0.571	 1.429	 1.818	 0.182	 0.000	 2.000	 1.778	 0.222	 1.000	 0.000	 2.500	 0.500	 0.609	 1.478	 1.217	 0.696	
+k141_742411;ND2;len=1047;[3192:4239](-)	 1.077	 0.923	 0.779	 0.078	 1.714	 1.636	 1.558	 0.234	 1.500	 0.500	 1.500	 0.500	 2.000	 2.000	 0.000	 0.000	 1.333	 2.444	 1.111	 0.000	 0.000	 1.111	 0.545	 2.364	 0.909	 0.182	 0.711	 2.133	 1.156	 0.000	 0.737	 2.000	 1.263	 0.000	 0.571	 1.429	 0.667	 1.333	 1.875	 0.125	 0.444	 1.556	 1.750	 0.250	 0.000	 2.000	 2.000	 0.000	 0.000	 2.000	 1.818	 0.182	 2.000	 1.000	 1.000	 0.000	 0.706	 1.176	 1.176	 0.941	
+k141_742411;ND1;len=975;[4450:5425](-)	 1.444	 0.556	 1.014	 0.000	 1.690	 1.859	 1.183	 0.254	 0.636	 1.364	 1.400	 0.600	 0.706	 1.882	 1.412	 0.000	 0.923	 1.615	 2.308	 0.000	 0.231	 0.923	 0.545	 2.909	 0.364	 0.182	 0.870	 1.913	 1.043	 0.174	 0.400	 2.000	 1.600	 0.000	 0.889	 1.111	 0.667	 1.333	 1.714	 0.286	 0.800	 1.200	 2.000	 0.000	 0.000	 2.000	 1.818	 0.182	 0.000	 0.000	 1.750	 0.250	 1.000	 1.000	 1.000	 1.000	 0.444	 2.000	 1.111	 0.444	
+k141_742411;CYTB;len=1137;[9286:10423](-)	 0.848	 1.152	 0.677	 0.000	 1.452	 2.129	 1.452	 0.290	 0.706	 1.294	 1.455	 0.545	 1.400	 1.400	 1.000	 0.200	 1.636	 3.000	 1.091	 0.000	 0.000	 0.273	 0.762	 1.524	 1.714	 0.000	 0.421	 2.316	 1.263	 0.000	 0.444	 1.444	 2.111	 0.000	 0.714	 1.286	 0.000	 2.000	 2.000	 0.000	 0.706	 1.294	 1.778	 0.222	 0.909	 1.091	 2.000	 0.000	 0.667	 1.333	 2.000	 0.000	 0.000	 0.500	 3.500	 0.000	 0.320	 1.440	 1.760	 0.480	
+k141_742411;ND6;len=522;[10496:11018](+)	 2.000	 0.000	 2.571	 1.929	 1.071	 0.000	 0.429	 0.000	 2.000	 0.000	 0.667	 1.333	 0.833	 0.167	 0.500	 2.500	 2.400	 0.000	 1.200	 0.000	 2.400	 0.000	 1.600	 0.800	 0.000	 1.600	 1.000	 0.000	 0.000	 3.000	 1.400	 0.400	 0.600	 1.600	 2.000	 0.000	 0.000	 0.000	 0.000	 0.000	 2.000	 0.000	 0.000	 0.000	 2.000	 0.000	 0.333	 1.667	 2.000	 0.000	 0.667	 1.333	 2.000	 0.000	 0.000	 2.000	 0.480	 0.320	 0.960	 2.240	
+k141_742411;ND5;len=1839;[11014:12853](-)	 0.837	 1.163	 0.545	 0.000	 1.333	 1.879	 1.818	 0.424	 0.963	 1.037	 1.538	 0.462	 1.217	 0.870	 1.739	 0.174	 1.067	 2.267	 1.067	 0.000	 0.533	 1.067	 0.625	 2.125	 1.125	 0.125	 0.710	 2.516	 0.710	 0.065	 0.560	 2.240	 1.120	 0.080	 0.857	 1.143	 0.250	 1.750	 1.882	 0.118	 0.786	 1.214	 2.000	 0.000	 1.091	 0.909	 1.833	 0.167	 0.333	 1.667	 1.571	 0.429	 0.889	 1.333	 1.778	 0.000	 0.267	 2.400	 0.800	 0.533	
+k141_742411;ND4;len=1386;[13061:14447](-)	 0.941	 1.059	 0.371	 0.062	 1.423	 1.794	 2.041	 0.309	 1.029	 0.971	 1.583	 0.417	 2.000	 0.667	 1.333	 0.000	 0.900	 2.550	 1.050	 0.150	 0.150	 1.200	 0.923	 2.462	 0.615	 0.000	 0.205	 1.949	 1.538	 0.308	 0.700	 2.200	 1.000	 0.100	 0.857	 1.143	 0.364	 1.636	 2.000	 0.000	 0.889	 1.111	 2.000	 0.000	 0.000	 2.000	 1.333	 0.667	 0.800	 1.200	 1.778	 0.222	 0.000	 0.727	 2.909	 0.364	 0.462	 2.154	 1.077	 0.308	
+k141_742411;ND4L;len=297;[14440:14737](-)	 1.429	 0.571	 0.250	 0.250	 1.750	 1.250	 2.000	 0.500	 2.000	 0.000	 1.333	 0.667	 4.000	 0.000	 0.000	 0.000	 1.200	 1.800	 1.200	 0.000	 0.600	 1.200	 0.000	 4.000	 0.000	 0.000	 1.143	 2.857	 0.000	 0.000	 0.533	 1.867	 1.600	 0.000	 0.000	 0.000	 0.500	 1.500	 1.333	 0.667	 0.667	 1.333	 0.000	 0.000	 0.000	 2.000	 2.000	 0.000	 0.667	 1.333	 2.000	 0.000	 0.000	 2.667	 1.333	 0.000	 0.000	 0.800	 3.200	 0.000	
+k141_742411;ND3;len=351;[14804:15155](-)	 1.111	 0.889	 0.444	 0.000	 2.000	 2.444	 0.667	 0.444	 0.800	 1.200	 1.333	 0.667	 2.000	 2.000	 0.000	 0.000	 0.750	 3.000	 1.500	 0.000	 0.750	 0.000	 0.500	 2.500	 1.000	 0.000	 0.400	 2.000	 1.600	 0.000	 0.571	 2.286	 1.143	 0.000	 2.000	 0.000	 0.000	 2.000	 1.333	 0.667	 0.000	 2.000	 2.000	 0.000	 0.000	 2.000	 1.667	 0.333	 2.000	 0.000	 2.000	 0.000	 0.000	 0.000	 4.000	 0.000	 0.667	 1.333	 0.667	 1.333	
+k141_742411;COX3;len=840;[15171:16011](-)	 0.750	 1.250	 1.714	 0.000	 1.543	 1.200	 1.371	 0.171	 1.250	 0.750	 1.556	 0.444	 1.412	 1.412	 1.176	 0.000	 0.706	 1.059	 2.118	 0.000	 1.765	 0.353	 0.000	 3.000	 1.000	 0.000	 0.696	 0.696	 2.435	 0.174	 0.480	 2.240	 1.280	 0.000	 1.000	 1.000	 0.353	 1.647	 1.778	 0.222	 0.000	 2.000	 2.000	 0.000	 0.000	 2.000	 2.000	 0.000	 0.667	 1.333	 1.833	 0.167	 0.000	 0.800	 2.400	 0.800	 0.727	 1.636	 1.455	 0.182	
+k141_742411;ATP6;len=534;[16010:16544](-)	 1.000	 1.000	 1.200	 0.000	 1.333	 1.067	 2.133	 0.267	 1.571	 0.429	 1.667	 0.333	 0.923	 2.154	 0.923	 0.000	 1.000	 1.000	 1.000	 0.000	 0.000	 3.000	 1.818	 1.091	 1.091	 0.000	 0.222	 1.778	 2.000	 0.000	 1.250	 1.500	 1.000	 0.250	 1.333	 0.667	 0.500	 1.500	 1.500	 0.500	 0.333	 1.667	 2.000	 0.000	 0.000	 0.000	 2.000	 0.000	 0.000	 0.000	 2.000	 0.000	 0.000	 1.000	 3.000	 0.000	 1.500	 1.000	 1.000	 0.500	
+
+
+```
 
 ### Regiões secundárias: D-loop
 
 
-## ☕ Usando <nome_do_projeto>
-
-Para usar <nome_do_projeto>, siga estas etapas:
-
-```
-<exemplo_de_uso>
-```
-
-Adicione comandos de execução e exemplos que você acha que os usuários acharão úteis. Fornece uma referência de opções para pontos de bônus!
-
-## 📫 Contribuindo para <nome_do_projeto>
-
-Para contribuir com <nome_do_projeto>, siga estas etapas:
-
-1. Bifurque este repositório.
-2. Crie um branch: `git checkout -b <nome_branch>`.
-3. Faça suas alterações e confirme-as: `git commit -m '<mensagem_commit>'`
-4. Envie para o branch original: `git push origin <nome_do_projeto> / <local>`
-5. Crie a solicitação de pull.
-
-Como alternativa, consulte a documentação do GitHub em [como criar uma solicitação pull](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
-
-## 🤝 Colaboradores
-
-Agradecemos às seguintes pessoas que contribuíram para este projeto:
-
-<table>
-  <tr>
-    <td align="center">
-      <a href="#" title="defina o titulo do link">
-        <img src="https://avatars3.githubusercontent.com/u/31936044" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
-        <sub>
-          <b>Iuri Silva</b>
-        </sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="#" title="defina o titulo do link">
-        <img src="https://s2.glbimg.com/FUcw2usZfSTL6yCCGj3L3v3SpJ8=/smart/e.glbimg.com/og/ed/f/original/2019/04/25/zuckerberg_podcast.jpg" width="100px;" alt="Foto do Mark Zuckerberg"/><br>
-        <sub>
-          <b>Mark Zuckerberg</b>
-        </sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="#" title="defina o titulo do link">
-        <img src="https://miro.medium.com/max/360/0*1SkS3mSorArvY9kS.jpg" width="100px;" alt="Foto do Steve Jobs"/><br>
-        <sub>
-          <b>Steve Jobs</b>
-        </sub>
-      </a>
-    </td>
-  </tr>
-</table>
-
-## 😄 Seja um dos contribuidores
-
-Quer fazer parte desse projeto? Clique [AQUI](CONTRIBUTING.md) e leia como contribuir.
-
-## 📝 Licença
-
-Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
