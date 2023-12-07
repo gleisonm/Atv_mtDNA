@@ -1,0 +1,50 @@
+#Seq_id        Length(bp)     Circularity    Closely_related_species
+k141_742411    16545          yes            Parachromis managuensis
+
+
+#Seq_id        Start  End    Length(bp) Direction  Type   Gene_name  Gene_prodcut                      Total_freq_occurred
+--------------------------------------------------------------------------------------------------------------------------
+k141_742411    140    308    169        -          CDS    ATP8       ATP synthase F0 subunit 8         1              
+k141_742411    309    384    76         -          tRNA   trnK(uuu)  tRNA-Lys                          1              
+k141_742411    376    1075   700        -          CDS    COX2       cytochrome c oxidase subunit II   1              
+k141_742411    1080   1153   74         -          tRNA   trnD(guc)  tRNA-Asp                          1              
+k141_742411    1158   1229   72         +          tRNA   trnS(uga)  tRNA-Ser                          2              
+k141_742411    1243   2806   1564       -          CDS    COX1       cytochrome c oxidase subunit I    1              
+k141_742411    2807   2877   71         +          tRNA   trnY(gua)  tRNA-Tyr                          1              
+k141_742411    2877   2942   66         +          tRNA   trnC(gca)  tRNA-Cys                          1              
+k141_742411    2978   3051   74         +          tRNA   trnN(guu)  tRNA-Asn                          1              
+k141_742411    3052   3121   70         +          tRNA   trnA(ugc)  tRNA-Ala                          1              
+k141_742411    3122   3194   73         -          tRNA   trnW(uca)  tRNA-Trp                          1              
+k141_742411    3193   4240   1048       -          CDS    ND2        NADH dehydrogenase subunit 2      1              
+k141_742411    4240   4309   70         -          tRNA   trnM(cau)  tRNA-Met                          1              
+k141_742411    4308   4379   72         +          tRNA   trnQ(uug)  tRNA-Gln                          1              
+k141_742411    4378   4448   71         -          tRNA   trnI(gau)  tRNA-Ile                          1              
+k141_742411    4451   5426   976        -          CDS    ND1        NADH dehydrogenase subunit 1      1              
+k141_742411    5426   5500   75         -          tRNA   trnL(uaa)  tRNA-Leu                          2              
+k141_742411    5500   7189   1690       -          rRNA   l-rRNA     16S ribosomal RNA                 1              
+k141_742411    7190   7262   73         -          tRNA   trnV(uac)  tRNA-Val                          1              
+k141_742411    7262   8213   952        -          rRNA   s-rRNA     12S ribosomal RNA                 1              
+k141_742411    8213   8282   70         -          tRNA   trnF(gaa)  tRNA-Phe                          1              
+k141_742411    9139   9209   71         +          tRNA   trnP(ugg)  tRNA-Pro                          1              
+k141_742411    9208   9279   72         -          tRNA   trnT(ugu)  tRNA-Thr                          1              
+k141_742411    9287   10424  1138       -          CDS    CYTB       cytochrome b                      1              
+k141_742411    10428  10497  70         +          tRNA   trnE(uuc)  tRNA-Glu                          1              
+k141_742411    10497  11019  523        +          CDS    ND6        NADH dehydrogenase subunit 6      1              
+k141_742411    11015  12854  1840       -          CDS    ND5        NADH dehydrogenase subunit 5      1              
+k141_742411    12854  12927  74         -          tRNA   trnL(uag)  tRNA-Leu                          2              
+k141_742411    12931  12998  68         -          tRNA   trnS(gcu)  tRNA-Ser                          2              
+k141_742411    12998  13067  70         -          tRNA   trnH(gug)  tRNA-His                          1              
+k141_742411    13062  14448  1387       -          CDS    ND4        NADH dehydrogenase subunit 4      1              
+k141_742411    14441  14738  298        -          CDS    ND4L       NADH dehydrogenase subunit 4L     1              
+k141_742411    14738  14807  70         -          tRNA   trnR(ucg)  tRNA-Arg                          1              
+k141_742411    14805  15156  352        -          CDS    ND3        NADH dehydrogenase subunit 3      1              
+k141_742411    15156  15228  73         -          tRNA   trnG(ucc)  tRNA-Gly                          1              
+k141_742411    15172  16012  841        -          CDS    COX3       cytochrome c oxidase subunit III  1              
+k141_742411    16011  16545  535        -          CDS    ATP6       ATP synthase F0 subunit 6         1              
+
+
+Protein coding genes totally found: 13
+tRNA genes totally found:           22
+rRNA genes totally found:            2
+--------------------------------------
+Genes totally found:                37
