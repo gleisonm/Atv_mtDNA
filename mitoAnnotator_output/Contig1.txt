@@ -1,0 +1,95 @@
+Contig1	TOPOLOGY		circular	
+	source	1..16545	ff_definition	Contig1 mitochondrial DNA, ???
+			organelle	mitochondrion
+			organism	Contig1
+			specimen_voucher	???
+			mol_type	genomic DNA
+	CDS	2857..3831	codon_start	1
+			gene	ND1
+			product	NADH dehydrogenase subunit 1
+			transl_table	2
+	CDS	4043..5088	codon_start	1
+			gene	ND2
+			product	NADH dehydrogenase subunit 2
+			note	Incomplete stop codon. Might indicate subsequent polyadenylation
+			transl_table	2
+	CDS	5477..7039	codon_start	1
+			gene	COXI
+			product	cytochrome c oxidase subunit I
+			transl_table	2
+	CDS	7208..7898	codon_start	1
+			gene	COXII
+			product	cytochrome c oxidase subunit II
+			note	Incomplete stop codon. Might indicate subsequent polyadenylation
+			transl_table	2
+	CDS	7975..8142	codon_start	1
+			gene	ATPase8
+			product	ATPase subunit 8
+			transl_table	2
+	CDS	8133..8815	codon_start	1
+			gene	ATPase6
+			product	ATPase subunit 6
+			note	Incomplete stop codon. Might indicate subsequent polyadenylation
+			transl_table	2
+	CDS	8816..9599	codon_start	1
+			gene	COXIII
+			product	cytochrome c oxidase subunit III
+			note	Incomplete stop codon. Might indicate subsequent polyadenylation
+			transl_table	2
+	CDS	9672..10020	codon_start	1
+			gene	ND3
+			product	NADH dehydrogenase subunit 3
+			note	Incomplete stop codon. Might indicate subsequent polyadenylation
+			transl_table	2
+	CDS	10090..10386	codon_start	1
+			gene	ND4L
+			product	NADH dehydrogenase subunit 4L
+			transl_table	2
+	CDS	10380..11760	codon_start	1
+			gene	ND4
+			product	NADH dehydrogenase subunit 4
+			note	Incomplete stop codon. Might indicate subsequent polyadenylation
+			transl_table	2
+	CDS	11974..13812	codon_start	1
+			gene	ND5
+			product	NADH dehydrogenase subunit 5
+			transl_table	2
+	CDS	complement(13809..14330)	codon_start	1
+			gene	ND6
+			product	NADH dehydrogenase subunit 6
+			transl_table	2
+	CDS	14404..15540	codon_start	1
+			gene	Cytb
+			product	cytochrome b
+			transl_table	2
+	rRNA	70..1022	product	12S rRNA
+			note	the 5 or 3 end of rRNA has been adjusted
+	rRNA	1095..2782	product	16S rRNA
+			note	the 5 or 3 end of rRNA has been adjusted
+	tRNA	1..69	product	tRNA-Phe
+	tRNA	1023..1094	product	tRNA-Val
+	tRNA	2783..2856	product	tRNA-Leu
+			note	Anticodon: UAA
+	tRNA	3835..3904	product	tRNA-Ile
+	tRNA	complement(3904..3974)	product	tRNA-Gln
+	tRNA	3974..4042	product	tRNA-Met
+	tRNA	5089..5160	product	tRNA-Trp
+	tRNA	complement(5162..5230)	product	tRNA-Ala
+	tRNA	complement(5232..5304)	product	tRNA-Asn
+	tRNA	complement(5341..5405)	product	tRNA-Cys
+	tRNA	complement(5406..5475)	product	tRNA-Tyr
+	tRNA	complement(7054..7124)	product	tRNA-Ser
+			note	Anticodon: UGA
+	tRNA	7130..7202	product	tRNA-Asp
+	tRNA	7899..7973	product	tRNA-Lys
+	tRNA	9600..9671	product	tRNA-Gly
+	tRNA	10021..10089	product	tRNA-Arg
+	tRNA	11761..11829	product	tRNA-His
+	tRNA	11830..11896	product	tRNA-Ser
+			note	Anticodon: GCU
+	tRNA	11901..11973	product	tRNA-Leu
+			note	Anticodon: UAG
+	tRNA	complement(14331..14399)	product	tRNA-Glu
+	tRNA	15549..15619	product	tRNA-Thr
+	tRNA	complement(15619..15688)	product	tRNA-Pro
+	D-loop	15689..16544	note	control region

@@ -1,0 +1,79 @@
+
+
+-----------------------------------------------
+NOVOPlasty: The Organelle Assembler
+Version 4.3.3
+Author: Nicolas Dierckxsens, (c) 2015-2020
+-----------------------------------------------
+
+
+Input parameters from the configuration file:   *** Verify if everything is correct ***
+
+Project:
+----------------------
+Project name          = mesonauta_festivus
+Type                  = mito
+Genome range          = 12000-22000
+K-mer                 = 33
+Max memory            = 128
+Extended log          = 1
+Save assembled reads  = no
+Seed Input            = /data/home/gleison.azevedo/IC/Projeto1-mitGenome/genome_assembly/assembly/assembly_1/Circularized_assembly_1_mesonauta_festivus.fasta
+Extend seed directly  = no
+Reference sequence    = 
+Variance detection    = 
+Chloroplast sequence  = 
+
+Dataset 1:
+----------------------
+Read Length           = 151
+Insert size           = 300
+Platform              = illumina
+Single/Paired         = PE
+Combined reads        = 
+Forward reads         = /data/home/gleison.azevedo/IC/Projeto1-mitGenome/genome_assembly/raw/ERR10768196_Illumina_NovaSeq_6000_paired_end_sequencing_1.fastq.gz
+Reverse reads         = /data/home/gleison.azevedo/IC/Projeto1-mitGenome/genome_assembly/raw/ERR10768196_Illumina_NovaSeq_6000_paired_end_sequencing_2.fastq.gz
+Store Hash            = 
+
+Heteroplasmy:
+-----------------------
+MAF                   = 
+HP exclude list       = 
+PCR-free              = 
+
+Optional:
+----------------------
+Insert size auto      = yes
+Use Quality Scores    = 
+Reduce ambigious N's  = 
+Output path           = /data/home/gleison.azevedo/IC/Projeto1-mitGenome/genome_assembly/assembly/
+
+Subsampled fraction: 100.00 %
+
+Retrieve Seed...
+
+Initial read retrieved successfully: AAACGTCTAATGGCCCATCAAGCACACGCATATCACATAGTAGACCCCAGCCCCTGGCCCCTAACAGGAGCAGTAGCCGCCCTCCTAATAACTTCCGGTTTAGCAATCTGAATGCACTTTCACAACACAACACTCATAGTATTAGGACTAG
+
+Start Assembly...
+
+
+-----------------Assembly 1 finished successfully: The genome has been circularized-----------------
+
+Contig 1                  : 16545 bp
+
+Total contigs              : 1
+Largest contig             : 16545 bp
+Smallest contig            : 16545 bp
+Average insert size        : 543 bp
+
+
+-----------------------------------------Input data metrics-----------------------------------------
+
+Total reads                : 124236966
+Aligned reads              : 347158
+Assembled reads            : 307382
+Organelle genome %         : 0.28 %
+Average organelle coverage : 3168
+
+-----------------------------------------------------------------------------------------------------
+
