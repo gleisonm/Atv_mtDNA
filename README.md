@@ -13,6 +13,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] tRNA scan
 - [x] RCSU
 - [ ] Regiões secundárias D-loop
+- [ ] Implementar mitoZ ao pipeline
 - [x] Árvore filogenética
 
 ## 💻 Softwares utilizados
