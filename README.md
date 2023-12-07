@@ -1,7 +1,6 @@
 #  _Mesonauta festivus_ - mtDNA
 
-![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/README-template?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/iuricode/README-template?style=for-the-badge)
+![GitHub language count](FASTA)
 ![GitHub forks](https://img.shields.io/github/forks/iuricode/README-template?style=for-the-badge)
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/iuricode/README-template?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/iuricode/README-template?style=for-the-badge)
@@ -33,8 +32,8 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 ## 🚀 Metodologia
 
 
-Para a moontagem do mtDNA tilizamos as reads de acesso <ERX10239209>
-Como seed do NOVOPlasty utilizamos o mtDNA de acesso <NC_033550.1>
+Para a moontagem do mtDNA tilizamos as reads de acesso [ERX10239209](https://www.ncbi.nlm.nih.gov/sra/ERX10239209)
+Como seed do NOVOPlasty utilizamos o mtDNA de acesso [NC_033550.1](https://www.ncbi.nlm.nih.gov/nuccore/NC_033550.1/)
 
 A parte de montagem, anotação e tRNAs está automatizada em um pipline em desenvolvimento em nextflow:
 [mitomine - NextFlow](https://github.com/gleisonm/mitomine.git)
