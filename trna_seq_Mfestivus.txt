@@ -1,0 +1,25 @@
+Sequence                                		tRNA	Bounds	tRNA	Anti	Intron Bounds	Inf	      
+Name                                    	tRNA #	Begin	End	Type	Codon	Begin	End	Score	Note
+--------                                	------	-----	------	----	-----	-----	----	------	------
+k141_742411_trnK_uuu__len_75__308_383_- 	1	1 	75	Lys	TTT	0	0	109.1	
+k141_742411_trnD_guc__len_73__1079_1152_-	1	1 	73	Asp	GTC	0	0	97.5	
+k141_742411_trnS_uga__len_71__1157_1228_	1	1 	71	Ser	TGA	0	0	107.4	
+k141_742411_trnY_gua__len_70__2806_2876_	1	1 	70	Tyr	GTA	0	0	104.8	
+k141_742411_trnC_gca__len_65__2876_2941_	1	1 	65	Cys	GCA	0	0	83.1	
+k141_742411_trnN_guu__len_73__2977_3050_	1	1 	73	Asn	GTT	0	0	110.2	
+k141_742411_trnA_ugc__len_69__3051_3120_	1	1 	69	Ala	TGC	0	0	106.5	
+k141_742411_trnW_uca__len_72__3121_3193_-	1	1 	72	Trp	TCA	0	0	97.1	
+k141_742411_trnM_cau__len_69__4239_4308_-	1	1 	69	Met	CAT	0	0	116.9	
+k141_742411_trnQ_uug__len_71__4307_4378_	1	1 	71	Gln	TTG	0	0	107.2	
+k141_742411_trnI_gau__len_70__4377_4447_-	1	1 	70	Ile	GAT	0	0	100.7	
+k141_742411_trnL_uaa__len_74__5425_5499_-	1	1 	74	Leu	TAA	0	0	114.7	
+k141_742411_trnV_uac__len_72__7189_7261_-	1	1 	72	Val	TAC	0	0	96.6	
+k141_742411_trnF_gaa__len_69__8212_8281_-	1	1 	69	Phe	GAA	0	0	91.9	
+k141_742411_trnP_ugg__len_70__9138_9208_	1	1 	70	Pro	TGG	0	0	100.6	
+k141_742411_trnT_ugu__len_71__9207_9278_-	1	1 	71	Thr	TGT	0	0	84.2	
+k141_742411_trnE_uuc__len_69__10427_10496_	1	1 	69	Glu	TTC	0	0	97.7	
+k141_742411_trnL_uag__len_73__12853_12926_-	1	1 	73	Leu	TAG	0	0	114.3	
+k141_742411_trnS_gcu__len_67__12930_12997_-	1	1 	67	Ser	GCT	0	0	70.7	No D-arm
+k141_742411_trnH_gug__len_69__12997_13066_-	1	1 	69	His	GTG	0	0	105.4	
+k141_742411_trnR_ucg__len_69__14737_14806_-	1	1 	69	Arg	TCG	0	0	92.6	
+k141_742411_trnG_ucc__len_72__15155_15227_-	1	1 	72	Gly	TCC	0	0	104.6	
