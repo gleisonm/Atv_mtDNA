@@ -30,6 +30,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 
 Para a moontagem do mtDNA tilizamos as reads de acesso [ERX10239209](https://www.ncbi.nlm.nih.gov/sra/ERX10239209)
+
 Como seed do NOVOPlasty utilizamos o mtDNA de acesso [NC_033550.1](https://www.ncbi.nlm.nih.gov/nuccore/NC_033550.1/)
 
 A parte de montagem, anotação e tRNAs está automatizada em um pipline em desenvolvimento em nextflow:
