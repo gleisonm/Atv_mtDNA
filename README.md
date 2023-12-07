@@ -1,7 +1,6 @@
 #  _Mesonauta festivus_ - mtDNA
 
-<img src="mitoAnnotator_output/Contig1-1.png" alt="mitoannotator - novoplasty">
-<img src="Mfestivus_ERR10789898.Mfestivus_ERR10789898.megahit.mitogenome.fa.result/circos.png" alt="mitoZ">
+  <img src="mitoAnnotator_output/Contig1-1.png" alt="mitoannotator - novoplasty" width='500'> <img src="Mfestivus_ERR10789898.Mfestivus_ERR10789898.megahit.mitogenome.fa.result/circos.png" alt="mitoZ" width='380'>
 
 > Projeto de montagem e análise do DNA mitocondrial do peixe _Mesonauta Festivus_.
 
@@ -13,7 +12,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Anotação
 - [x] tRNA scan
 - [x] RCSU
-- [] Regiões secundárias D-loop
+- [ ] Regiões secundárias D-loop
 - [x] Árvore filogenética
 
 ## 💻 Softwares utilizados
@@ -37,7 +36,7 @@ A parte de montagem, anotação e tRNAs está automatizada em um pipline em dese
 
 ### Montagem:
 
-NOVOPlasty
+#### NOVOPlasty
 ```
 Project:
 -----------------------
@@ -119,9 +118,8 @@ Use Quality Scores    = no
 Reduce ambigious N's  =
 Output path           =
 ```
-c
 
-Mitoz
+#### Mitoz
 ```
 fastq1=/storages/acari/gleison.azevedo/ciclideos/data/raw/ERR10789898_Illumina_NovaSeq_6000_paired_end_sequencing_1.fastq.gz
 fastq2=/storages/acari/gleison.azevedo/ciclideos/data/raw/ERR10789898_Illumina_NovaSeq_6000_paired_end_sequencing_2.fastq.gz
@@ -145,8 +143,6 @@ mitoz all  \
 [MitoZ ASSEMBLY](Mfestivus_ERR10789898.megahit.result)
 [MitoZ ANOTAÇÃO](Mfestivus_ERR10789898.Mfestivus_ERR10789898.megahit.mitogenome.fa.result)
 
-As mitocondrias foram alinhadas utilizando BLAST e obtiveram .....
-
 ### Anotação:
 
 As mitocôndrias foram anotadas no [MitoAnnotator](http://mitofish.aori.u-tokyo.ac.jp/annotation/input/)
@@ -156,29 +152,6 @@ As mitocôndrias foram anotadas no [MitoAnnotator](http://mitofish.aori.u-tokyo.
 ### tRNAscan:
 
 Os tRNAs foram obtidos pelo mitoz e plotados pelo programa [tRNAscan-SE](http://lowelab.ucsc.edu/tRNAscan-SE/)
-
-#### Outputs:
-<img src="drwtrna123814.gif" alt="tRNA">
-<img src="drwtrna123845.gif" alt="tRNA">
-<img src="drwtrna123876.gif" alt="tRNA">
-<img src="drwtrna123906.gif" alt="tRNA">
-<img src="drwtrna123938.gif" alt="tRNA">
-<img src="drwtrna123969.gif" alt="tRNA">
-<img src="drwtrna124037.gif" alt="tRNA">
-<img src="drwtrna124007.gif" alt="tRNA">
-<img src="drwtrna124097.gif" alt="tRNA">
-<img src="drwtrna124067.gif" alt="tRNA">
-<img src="drwtrna124127.gif" alt="tRNA">
-<img src="drwtrna124157.gif" alt="tRNA">
-<img src="drwtrna124187.gif" alt="tRNA">
-<img src="drwtrna124217.gif" alt="tRNA">
-<img src="drwtrna124247.gif" alt="tRNA">
-<img src="drwtrna124279.gif" alt="tRNA">
-<img src="drwtrna124309.gif" alt="tRNA">
-<img src="drwtrna124340.gif" alt="tRNA">
-<img src="drwtrna124371.gif" alt="tRNA">
-<img src="drwtrna124433.gif" alt="tRNA">
-<img src="drwtrna124468.gif" alt="tRNA">
 
 ```
 
@@ -209,10 +182,32 @@ k141_742411_trnR_ucg__len_69__14737_14806_-	1	1 	69	Arg	TCG	0	0	92.6
 k141_742411_trnG_ucc__len_72__15155_15227_-	1	1 	72	Gly	TCC	0	0	104.6	
 ```
 
+<img src="drwtrna123814.gif" alt="tRNA" width='300'> <img src="drwtrna123845.gif" alt="tRNA" width='300'>
+<img src="drwtrna123876.gif" alt="tRNA" width='300'>
+<img src="drwtrna123906.gif" alt="tRNA" width='300'>
+<img src="drwtrna123938.gif" alt="tRNA" width='300'>
+<img src="drwtrna123969.gif" alt="tRNA" width='300'>
+<img src="drwtrna124037.gif" alt="tRNA" width='300'>
+<img src="drwtrna124007.gif" alt="tRNA" width='300'>
+<img src="drwtrna124097.gif" alt="tRNA" width='300'>
+<img src="drwtrna124067.gif" alt="tRNA" width='300'>
+<img src="drwtrna124127.gif" alt="tRNA" width='300'>
+<img src="drwtrna124157.gif" alt="tRNA" width='300'>
+<img src="drwtrna124187.gif" alt="tRNA" width='300'>
+<img src="drwtrna124217.gif" alt="tRNA" width='300'>
+<img src="drwtrna124247.gif" alt="tRNA" width='300'>
+<img src="drwtrna124279.gif" alt="tRNA" width='300'>
+<img src="drwtrna124309.gif" alt="tRNA" width='300'>
+<img src="drwtrna124340.gif" alt="tRNA" width='300'>
+<img src="drwtrna124371.gif" alt="tRNA" width='300'>
+<img src="drwtrna124433.gif" alt="tRNA" width='300'>
+<img src="drwtrna124468.gif" alt="tRNA" width='300'>
+
+
 ### Árvore Filogenética:
 
-A árvore foi montada copm o [Phylotree]([http://lowelab.ucsc.edu/tRNAscan-SE/](https://phylo.io/))
-<img src="PhyloIO_Tree.png" alt="tree">
+A árvore foi montada com o [Phylotree](https://phylo.io/)
+<img src="PhyloIO_Tree.png" alt="tree" width='500'>
 
 ### RSCU:
 
@@ -238,5 +233,5 @@ k141_742411;ATP6;len=534;[16010:16544](-)	 1.000	 1.000	 1.200	 0.000	 1.333	 1.
 ```
 
 ### Regiões secundárias: D-loop
-
+[]
 
